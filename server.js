@@ -30,6 +30,7 @@ function start(route,handle){
         //response.end();
     }
 
+    //創見伺服器，port為8888
     http.createServer(onRequest).listen(8888);
     console.log("Server has started.");
 }
