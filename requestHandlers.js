@@ -13,14 +13,16 @@ function start(response,postData,params){
     '</head>'+
     '<body>'+
     '<form action="/upload" method="post">'+
+    'POST：<br>'+
     '<input type="text" name="textname"></input>'+
     '<br>'+
-    '<input type="submit" value="Submit text" />'+
+    '<input type="submit" value="Submit" />'+
     '</form>'+
     '<form action="/upload1" method="get">'+
+    'GET：<br>'+
     '<input type="text" name="textname1"></input>'+
     '<br>'+
-    '<input type="submit" value="Submit text" />'+
+    '<input type="submit" value="Submit" />'+
     '</form>'+
     '</body>'+
     '</html>';
