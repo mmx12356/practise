@@ -35,12 +35,10 @@ function start(response,postData,params){
 function upload(response,postData,params){
     console.log("Request handler 'upload' was called.");
     response.writeHead(200,{"Content-Type":"text/plain"});
-    response.write("You 've sent:" + 
+    //response.write("You 've sent:" + 
     //post
-    querystring.parse(postData).textname);
-    //get
-    //querystring.parse(params).textname);
-    //let pathname = url.parse(request.url).pathname;
+    //querystring.parse(postData).textname);
+    response.write(`You 've sent:${querystring.parse(postData).textname}`);
 
     response.end();
     //return "Hello Upload";
@@ -49,12 +47,10 @@ function upload(response,postData,params){
 function upload1(response,postData,params){
     console.log("Request handler 'upload1' was called.");
     response.writeHead(200,{"Content-Type":"text/plain"});
-    response.write("You 've sent:" + 
-    //post
-    //querystring.parse(postData).textname);
+    //response.write("You 've sent:" + 
     //get
-    querystring.parse(params).textname1);
-    //let pathname = url.parse(request.url).pathname;
+    //querystring.parse(params).textname1);
+    response.write(`You 've sent:${querystring.parse(params).textname1}`);
 
     response.end();
     //return "Hello Upload";
